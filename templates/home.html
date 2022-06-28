@@ -1,0 +1,10 @@
+{% extends '_base.html' %}
+
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+    <p>Hello, World!</p>
+    {% for book in object_list %}
+        {{ book }}
+    {% endfor %}
+{% endblock content %}
